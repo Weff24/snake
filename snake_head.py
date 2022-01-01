@@ -20,15 +20,7 @@ class SnakeHead(SnakeBodyBlock):
         color = self.settings.snake_color
         pygame.draw.circle(self.screen, color,
                            (round(self.pos_x + size / 2), round(self.pos_y + size / 2)), size / 2)
-# 2 of the 4 eyes will be covered by the rectangle so the snake only has 2 eyes
-#        pygame.draw.circle(self.screen, self.settings.border_color,
-#                           (round(self.pos_x + size / 4), round(self.pos_y + size / 4)), 3)
-#        pygame.draw.circle(self.screen, self.settings.border_color,
-#                           (round(self.pos_x + size / 4), round(self.pos_y + 3 * size / 4)), 3)
-#        pygame.draw.circle(self.screen, self.settings.border_color,
-#                           (round(self.pos_x + 3 * size / 4), round(self.pos_y + size / 4)), 3)
-#        pygame.draw.circle(self.screen, self.settings.border_color,
-#                           (round(self.pos_x + 3 * size / 4), round(self.pos_y + 3 * size / 4)), 3)
+
         # The rectangle and eyes have a different orientation depending on movement direction.
         # self.direction = 1 (up), 2 (right), 3 (down), or 4 (left)
         if self.direction == 1:

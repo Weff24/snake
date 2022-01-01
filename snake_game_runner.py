@@ -24,8 +24,6 @@ class SnakeGameRunner:
         # Create and display the snake game window
         pygame.display.set_caption('Snake')
         self.screen = pygame.display.set_mode(self.settings.window_dim, pygame.RESIZABLE)
-#        img = pygame.image.load('images/Viper_icon32.png')
-#        pygame.display.set_icon(img)
 
         # Initialize snake game objects, flags, and buttons
         self.game_running = False
